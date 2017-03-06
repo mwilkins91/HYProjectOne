@@ -1,0 +1,201 @@
+.wrapperAboutPics {
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+.wrapperAboutTxt {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+header.aboutUsHead {
+	.wholeNav {
+		margin: 5px 0 0 0;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	.navLogoLi, .iconsLi, .navMainLi {
+		float: left;
+	}
+	.navLogoLi {
+		width: 30%;
+		.navLogo {
+			width: 25%;
+			margin-top: 5px;
+		}
+	}
+	.wrapperAboutPics {
+		background-image: url('../assets/Optimized-hero_02.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center 35%;
+		height: 70vh;
+	}
+	.title{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		img {
+			width: 70%;
+			margin: 0 auto;
+			display: block;
+		}
+		p {
+			color: white;
+			text-align: center;
+			letter-spacing: 1px;
+		}
+	}
+}
+.langNavLi {
+	width: 5%;
+	float: left;
+	.engLi, .fraLi, p {
+		float: left;
+	}
+	&, a{
+		color: darkgrey;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 1px;
+		transition: color 0.2s;
+	}
+	a:hover {
+		color: black;
+	}
+}
+.iconsLi {
+	width: 18.6667%;
+	padding-right: 14px;
+}
+.icons {
+	display: flex;
+	justify-content: flex-end;
+	a {
+		color: rgb(50,50,50);
+		font-size: 1.1rem;
+		margin: 0 5px;
+		transition: color 0.2s;
+		&:hover {
+			color: #9E2728;
+		}
+	}
+}
+.navMain, .icons{
+	li {
+		float: left;
+	}
+}
+.aboutUsHead li.navMainLi, .blogHead li.navMainLi{
+	width: 46.3333%;
+}
+.aboutUsHead li.navMainLi .navMain, .blogHead li.navMainLi .navMain{
+	display: flex;
+	justify-content: space-between;
+	p{
+		text-align: center;
+	}
+	a {
+		color: black;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: background 0.1s, color 0.2s;
+		padding: 4px;
+		border-radius: 15px;
+		&:hover {
+			background: white;
+			color: #9E2728;
+		}
+	}
+}
+
+
+
+.article1 {
+	h2 {
+		font-size: 3.5rem;
+		text-transform: uppercase;
+		position: relative;
+		margin-top: 110px;
+		&:before {
+			content:'_';
+			position: absolute;
+			top: -6.4rem;
+			left: 9px;
+			font-size: 4rem;
+			transform: scaleX(2) scaleY(1.4);
+			color: #9E2728;
+		}
+	}
+	p {
+		padding: 0 30px;
+		margin-top: 0;
+		font-size: 1.1rem;
+		line-height: 2rem;
+		&.firstP {
+			font-style: italic;
+			margin-bottom: 40px;
+		}
+	}
+	h3 {
+		padding: 0 30px;
+		margin-bottom: 0;
+	}
+}
+
+
+.wrapperAboutPics.secHero {
+	margin-top: 80px;
+	background-image: url('../assets/Optimized-chefHERO.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center 35%;
+	height: 830px;
+	position: relative;
+	.title {
+		background: rgba(193, 193, 193, 0.7);
+		position: absolute;
+		top: 40%;
+		left: 55%;
+		max-width: 350px;
+		transform: none;
+	}
+}
+.innerTitle {
+	width: 100%;
+	background: #96858D;
+	color: white;
+	padding: 10px 35px;
+	text-align: justify;
+	margin: 20px 0 40px;
+	p.preTitle {
+		font-weight: bold;
+		font-size: 1.2rem;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	h3 {
+		font-size: 1.8rem;
+		text-align: center;
+		margin-top: 0;
+		position: relative;
+		text-transform: uppercase;
+		&:after {
+			content: "-";
+			position: absolute;
+			left: 50%;
+			bottom: -20px;
+			font-size: 1.7rem;
+			transform: scaleX(5);
+		}
+	}
+	p.afterTitle {
+		line-height: 2.3rem;
+	}
+}
+	.aboutFoot {
+		margin-top: 100px;
+	}

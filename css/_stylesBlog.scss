@@ -1,0 +1,179 @@
+header.blogHead {
+@extend header.aboutUsHead;
+	.wrapperBlogPics {
+		@extend .wrapperAboutPics;
+		background-image: url('../assets/Optimized-blog_hero.jpg');
+		background-position: 60% 0%;
+	}
+	.title {
+		img{
+			position: relative;
+			left: -15px;
+		}
+		p {
+			margin-top: 0;
+			text-align: center;
+		}
+	}
+}
+
+
+
+.galleryHeader {
+	background: #B34A47;
+	padding: 15px 180px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 80px;
+	margin-bottom: 50px;
+
+	label {
+		width: 35%;
+		margin-right: 20px;
+		color: white;
+	}
+	select {
+		appearance: none;
+		background: none;
+		border: none;
+		border-bottom: 1px solid #D2CBCB;
+		width: 35%;
+		text-transform: uppercase;
+		color: #D2CBCB;
+		margin-right: 30px;
+		position: relative;
+		background-image: url('../assets/arrow2.png');
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+		background-position: 100% center;
+		letter-spacing: 1px;
+	}
+	button {
+		background: none;
+		color: white;
+		border: white solid 1px;
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		letter-spacing: 1px;
+		padding: 2px 10px;
+		transition: background 0.2s, color 0.3s;
+		&:hover {
+			background: white;
+			color: #B34A47;
+		}
+	}
+}
+
+.galleryItems {
+	width: 97%;
+	margin:0 auto;
+}
+.galleryItem {
+	float: left;
+	width: calc(33.333333333% - 20px);
+	margin: 10px;
+	.border {
+		border: 1px solid #D2CBCB;
+		border-top: 0px;
+		padding: 35px 0;
+		padding-bottom: 15px;				
+	}
+}
+.afterImgTxt {
+	width: 85%;
+	margin: 0 auto;
+	h3 {		
+		font-size: 1.4rem;
+		position: relative;
+		font-weight: lighter;
+		&:before {
+			content:'_';
+			position: absolute;
+			top: -3.8rem;
+			left: 2px;
+			font-size: 2.1rem;
+			transform: scaleX(2) scaleY(1.4);
+			color: #9E2728;
+		}
+	}
+	p {
+		float: right;
+		color:darkgrey;
+		&:first-of-type {
+			float: left;
+		}
+	}
+}
+.galleryItem figure {
+	position: relative;
+	overflow: hidden;
+	height: 170px;
+	background: black;
+	&:hover img{
+		opacity: .3;
+		cursor: pointer;
+	}
+	img {
+		max-width: 100%;
+		min-height: 170px;
+		position: relative;
+		transition: opacity 0.5s;
+	}
+	.image1 {
+		bottom: 180px;
+	}
+	.image2 {
+		bottom: 160px;
+		max-width: 110%;
+	}
+	.image4 {
+		left: -15px;
+		bottom: 25px;
+		max-width: 120%
+	}
+	.image5 {
+		max-width: 110%;
+	}
+	.image6 {
+		max-width: 130%;
+		bottom: 30px;
+	}
+	figcaption {
+		position: absolute;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: white 1px solid;
+		padding: 30px;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2rem;
+	}
+}
+button.galleryLoad {
+	width: 110px;
+	background: none;
+	text-transform: uppercase;
+	border: 1px solid #9E2728;
+	margin: 25px auto;
+	display: block;
+	font-weight: bold;
+	padding: 5px 0;
+	letter-spacing: 1px;
+	transition: background 0.2s, color 0.3s;
+	&:hover {
+		background: #9E2728;
+		color: white;
+	}
+}
+
+
+section.wrapperAboutPics.blogHero {
+	background-image: url('../assets/Optimized-wine.jpg');
+}
+
+footer.aboutFoot.blogFoot {
+	margin-top: 50px;
+}
